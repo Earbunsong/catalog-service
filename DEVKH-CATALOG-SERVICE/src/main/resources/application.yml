@@ -1,0 +1,17 @@
+server:
+  port: 8085
+spring:
+  data:
+    mongodb:
+      authentication-database:
+      uri: mongodb://localhost:27017
+      database: finalcataog
+  application:
+    name: CATALOG-SERVICE
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defaultZone: http://localhost:8761/eureka/
+  config:
+    import: optional:configserver:http://localhost:8888

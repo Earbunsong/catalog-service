@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      authentication-database:
+      uri: mongodb://localhost:27017
+      database: finalcataog
+  application:
+    name: COURSE-SERVICE
+  profiles:
+    active: stage
+  config:
+    import: optional:configserver:http://${CONFIG_SERVER_URL:128.199.204.23}:8888
+#  data:
+#    mongodb:
+#      uri: mongodb://139.59.252.233:27017/admin
+#      username: admin
+#      password: hai172212  # Use environment variable for password
+#
+server:
+  port: 8086
+#
+#eureka:
+#  client:
+#    service-url:
+#      #      defaultZone: ${EUREKA_SERVER_ADDRESS}
+#      defaultZone: http://128.199.204.23:8761/eureka/
+
+
+  # Spring Application
+

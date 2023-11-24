@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: DEVKH-RATE-REVIEW-SERVICE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rate-review-db
+      database: rate-review-db
+  rsocket:
+    server:
+      port: 8088
